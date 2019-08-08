@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Transaction from '../Transaction/Transaction'
+import './Transfer.css'
+import {Link} from 'react-router-dom'
 
 export default class Transfer extends Component {
     state = {
@@ -10,7 +11,11 @@ export default class Transfer extends Component {
     render() {
         return (
             <div className='Transfer'>
-                <Transaction />
+                Transfer
+                <Link to='/dashboard'>
+                    <button>Cancel</button>
+                </Link>
+                <button>Submit</button>
             </div>
         )
     }

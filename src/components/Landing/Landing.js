@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './Landing.css'
+
 
 export default class Landing extends Component {
     state = {
@@ -9,7 +11,20 @@ export default class Landing extends Component {
     render() {
         return (
             <div className='Landing'>
-                Landing
+                <div className="left">
+                    <div className='logo'>
+                        <div>$</div>
+                    </div>
+                </div>
+                <div className='right'>
+                    <div className="inputsContainer">
+                        <input type='text' placeholder='Username'/>
+                        <input type='text' placeholder='Email'/>
+                        <input type='password' placeholder='Password'/>
+                        <button>Register</button>
+                        <button>Login</button>
+                    </div>
+                </div>
             </div>
         )
     }
